@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../Libs/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./../Libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./bill.css">
+    <title>Bán hàng | MANA SHOP</title>
+</head>
+
+<body>
+    <!-- <div class="main-background"></div> -->
+
+    <!-- Sidebar -->
+    <div class="sidenav text-center">
+        <div class="sidebar-logo">
+            <h2 class="logo">Mana shop</h2>
+        </div>>
+        <a href="http://127.0.0.1:5500/Home/home.html" class="sidebar_item"><img class="sidebar_item-icon" src="./../images/white-home.png" width="24px" alt="Home">Tổng quan</a>
+        <a href="http://127.0.0.1:5500/Bill/Bill.html" class="sidebar_item active"><img class="sidebar_item-icon" src="./../images/white-sell.png" width="24px" alt="">Bán hàng</a>
+        <button class="dropdown-btn">
+            <img class="sidebar_item-icon" src="./../images/white-bill.png" width="24px" alt="">Hóa đơn
+            <img class="icon-right" src="./../images/arrow.png" width="25px">
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropdown-btn">
+            <img class="sidebar_item-icon" src="./../images/white-product.png" width="24px" alt="">Sản phẩm
+            <img class="icon-right" src="./../images/arrow.png" width="25px">
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropdown-btn">
+            <img class="sidebar_item-icon" src="./../images/white-customer.png" width="24px" alt="">Khách hàng
+            <img class="icon-right" src="./../images/arrow.png" width="25px">
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropdown-btn">
+            <img class="sidebar_item-icon" src="./../images/white-employe.png" width="24px" alt="">Nhân viên
+            <img class="icon-right" src="./../images/arrow.png" width="25px">
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <button class="dropdown-btn">
+            <img class="sidebar_item-icon" src="./../images/white-supplier.png" width="24px" alt="">Nhà cung cấp
+            <img class="icon-right" src="./../images/arrow.png" width="25px">
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <a href="#" class="sidebar_item"><img class="sidebar_item-icon" src="./../images/white-storehouse.png" width="24px" alt="">Quản lý kho</a>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <!-- status bar -->
+        <nav class="profile-navbar">
+            <div class="profile">
+                <img class="profile_avatar" src="./../images/ava.jpg" alt="avatar">
+                <div class="profile_name">
+                    <span>Chào mừng Đậu Mòe quay trở lại!</span><br>
+                    <small>Nhân viên bán hàng</small>
+                </div>
+            </div>
+            <button class="btn-logoutCustom">Đăng xuất</button>
+        </nav>
+
+        <!-- content -->
+        <div class="content">
+
+            <div class="container m-0">
+                <div class="search-container position-fixed">
+                    <!-- search products -->
+                    <input type="text" class="search col-4" id="searchProduct" placeholder="Nhập mã sản phẩm, tên sản phẩm">
+                    <div class="col-4"></div>
+                    <!-- search customer -->
+                    <input type="text" class="search col-4" id="searchCustomer" placeholder="Nhập mã khách hàng, tên khách hàng">
+                </div>
+                <div class="row result-container">
+                    <ul class="col-4 filter-result" id="productResult">
+                        <li>Sữa tươi trân châu đường đen</li>
+                        <li>Bánh quy Danisa</li>
+                        <li>Sữa đậu nành bịch 200ml</li>
+                        <li>Sữa tươi trân châu đường đen</li>
+                        <li>Bánh quy Danisa</li>
+                        <li>Sữa đậu nành bịch 200ml</li>
+                        <li>Sữa tươi trân châu đường đen</li>
+                        <li>Bánh quy Danisa</li>
+                        <li>Sữa đậu nành bịch 200ml</li>
+                        <li>Sữa tươi trân châu đường đen</li>
+                        <li>Bánh quy Danisa</li>
+                        <li>Sữa đậu nành bịch 200ml</li>
+                        <li>Sữa tươi trân châu đường đen</li>
+                        <li>Bánh quy Danisa</li>
+                        <li>Sữa đậu nành bịch 200ml</li>
+                        <li>Sữa tươi trân châu đường đen</li>
+                        <li>Bánh quy Danisa</li>
+                        <li>Sữa đậu nành bịch 200ml</li>
+                    </ul>
+                    <div class="col-4" style="padding-right: 0;"></div>
+                    <ul class="col-4 filter-result" id="customerResult">
+                        <li><img src="./../images/black-plus.png" style="margin-right: 5px;" width="25px" alt="add customer">Thêm khách hàng</li>
+                        <li>Nguyễn Văn Mòe</li>
+                        <li>Đậu Thị Thanh Kỳ</li>
+                        <li>Trần Đức Quang</li>
+                        <li>Nguyễn Văn Nhân</li>
+                        <li>Hậu Tận Thế</li>
+                        <li>Ngẫu Hứng Mua</li>
+                        <li>Tò Thị Văn Vẻ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- create bill -->
+            <div class="bill-create">
+                <table class="table">
+                    <thead>
+                        <tr class="header-bill">
+                            <th scope="col" class="bg-dark">STT</th>
+                            <th scope="col" class="bg-dark">Mã sản phẩm</th>
+                            <th scope="col" class="bg-dark">Tên sản phẩm</th>
+                            <th scope="col" class="bg-dark">Đơn giá</th>
+                            <th scope="col" class="bg-dark">Số lượng</th>
+                            <th scope="col" class="bg-dark">Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Milk-01</td>
+                            <td>Sữa nguyên kem Vinamilk</td>
+                            <td>100.000</td>
+                            <td>2</td>
+                            <td>200.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Cake-19</td>
+                            <td>Bánh kem sinh nhật dâu tây size XS max</td>
+                            <td>250.000</td>
+                            <td>1</td>
+                            <td>250.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Cookie-06</td>
+                            <td>Bánh quy hoàng gia Danisa</td>
+                            <td>150.000</td>
+                            <td>2</td>
+                            <td>300.000</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Checkout -->
+            <div class="customer-bill">
+                <h2 class="customer-bill-header">Thông tin khách mua hàng</h2>
+                <div class="bill-info-container">
+                    <div class="customer-info-bill">
+                        <table class="table table-light">
+                            <tbody>
+                                <tr>
+                                    <th>Tên khách hàng</th>
+                                    <td>Đậu Văn Mòe</td>
+                                </tr>
+                                <tr>
+                                    <th>Số điện thoại</th>
+                                    <td>(+84) 12 238 1238</td>
+                                </tr>
+                                <tr>
+                                    <th>Địa chỉ</th>
+                                    <td>124 đường Thanh Bình, Nam Từ Liêm, Hà Nội</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="customer-info-bill">
+                        <table class="table table-light">
+                            <tbody>
+                                <tr>
+                                    <th>Tổng tiền hàng</th>
+                                    <td id="cashMustPay">1234123 VNĐ</td>
+                                </tr>
+                                <tr>
+                                    <th>Tiền phải trả lại:</th>
+                                    <td id="cashBack">0 VNĐ</td>
+                                </tr>
+                                <tr>
+                                    <th>Tiền khách đưa</th>
+                                    <td><input type="number" class="form-control" placeholder="VNĐ" id="bill-cash"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-info btn-custom" id="createBill">Tạo hóa đơn mới</button>
+                <button class="btn btn-danger btn-custom float-right" id="checkOut" disabled>Thanh toán</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./../Libs/js/jquery-3.2.1.min.js"></script>
+    <script src="./../Libs/js/bootstrap.min.js"></script>
+    <script src="./bill.js"></script>
+</body>
+
+</html>
